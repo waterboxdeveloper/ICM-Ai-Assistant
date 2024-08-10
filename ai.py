@@ -76,7 +76,7 @@ class AIAssistant:
             raise Exception(f"Error al generar la respuesta: {e}")  # Manejar errores al generar la respuesta
 
 # Uso del AIAssistant
-PDF_PATH = '/Users/egc/Documents/EconomyC0der/icm/ICM International Consulting México, S.pdf'
+PDF_PATH = os.path.join(os.path.dirname(__file__), 'ICM International Consulting México, S.pdf')
 assistant = AIAssistant(PDF_PATH)  # Crear una instancia de AIAssistant
 
 user_input = "¿Cuál es el horario de atención de la facultad?"  # Pregunta del usuario

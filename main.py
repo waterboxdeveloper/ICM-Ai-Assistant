@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Ruta al archivo PDF fijo
-PDF_PATH = '/Users/egc/Documents/EconomyC0der/icm/ICM International Consulting México, S.pdf'# Crear una instancia de AIAssistant
+PDF_PATH = os.path.join(os.path.dirname(__file__), 'ICM International Consulting México, S.pdf')
 assistant = AIAssistant(PDF_PATH)
 
 def on_input_change():

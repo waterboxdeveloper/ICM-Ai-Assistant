@@ -2,6 +2,6 @@ google-generativeai
 streamlit
 streamlit-chat
 pandas
-python-dotenvclear
 PyPDF2
+python-dotenv
 
